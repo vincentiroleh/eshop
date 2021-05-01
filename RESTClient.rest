@@ -1,0 +1,16 @@
+GET http://localhost:3000/api/v1/ HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Books",
+    "image": "img_url",
+    "countInStock": 100
+}
+
+###
+
+GET http://localhost:3000/api/v1/products HTTP/1.1
